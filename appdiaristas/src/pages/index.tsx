@@ -5,10 +5,18 @@ import UserInformation from 'ui/components/data-display/UserInformation/UserInfo
 export default function Home() {
   return (
     <div>
-      <SafeEnvironment/>
-      <PageTitle 
-      title={'Conheça os profissionais'}
-      subtitle={'Preencha seu endereço e veja todos os profissionais da sua localidade'}
+      <SafeEnvironment />
+      <PageTitle
+        title={"Conheça os profissionais"}
+        subtitle={
+          "Preencha seu endereço e veja todos os profissionais da sua localidade"
+        }
+      />
+      <UserInformation
+        name={"Gabriel"}
+        picture={""}
+        rating={3}
+        description={"São Paulo"}
       />
     </div>
   );
